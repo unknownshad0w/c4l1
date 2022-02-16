@@ -1,0 +1,67 @@
+<html>
+<head></head>
+<body>
+    
+   <p id = 'School'> </p>
+   
+   <button onclick="myStartFunction()">???</button> <button onclick="myStopFunction()">stop</button>
+   <p id="demo"></p>
+
+<script>
+//warm up
+//const date = 8
+//if  (date>15){
+   //  console.log('past my birthday')
+ //}
+// else if (date===15){
+//     console.log('my birthday')
+ //}
+ //else {
+   //  console.log('not my birthday yet')
+ //}
+
+
+
+
+
+let hours = new Date().getHours();
+    let timefor;
+    if (hours < 10) {
+        timefor = "school"
+    } else if (hours < 20){
+        timefor = "freetime"
+}
+     else {
+        timefor = "sleeping"
+     }    
+     document.getElementById('School').innerHTML = timefor
+
+
+
+    
+
+     setTimeout(()=>{
+document.body.style.backgroundColor = "green"
+} , 1000)
+setTimeout(()=>{
+ document.getElementById("Twelve").innerHTML="Turquoise"
+} , 2000)
+var myVar;
+function myStartFunction() {
+  myVar = setInterval(function(){ alertFunc("First parameter", "Second parameter"); }, 1000);
+}
+function alertFunc(param1, param2) {
+  document.getElementById("demo").innerHTML += "WAKE UP!";
+  
+
+}
+function myStopFunction() {
+  clearInterval(myVar);
+}
+     
+
+</script>
+
+</body>
+
+</html>

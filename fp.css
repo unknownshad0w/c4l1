@@ -1,0 +1,36 @@
+body{
+    background-image: url('no.jpg');
+    color: rgb(255, 255, 255);
+    font-family: 'Fredericka the Great', cursive;
+
+
+}
+input{
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    font-family: 'Fredericka the Great', cursive;
+
+
+}
+
+
+
+
+.navbar{
+    overflow: hidden;
+    background-color: skyblue;
+    border-radius: 300px;
+    }
+    button{
+     font-size: 20px;
+     border-radius: 12px;
+     background-color:#39ff14;
+    }
+    button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+
+    }
+
+

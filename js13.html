@@ -1,0 +1,33 @@
+<html>
+
+<body>
+
+    <button onclick="myStartFunction()">???</button> <button onclick="myStopFunction()">stop</button>
+   <p id="demo"></p>
+
+<script> 
+var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+ setTimeout(()=>{
+    document.body.style.backgroundColor = randomColor
+    } , 1000)
+    setTimeout(()=>{
+     document.getElementById("Twelve").innerHTML="Turquoise"
+    } , 2000)
+    var myVar;
+    function myStartFunction() {
+      myVar = setInterval(function(){ alertFunc("First parameter", "Second parameter"); }, 1000);
+    }
+    function alertFunc(param1, param2) {
+      document.getElementById("demo").innerHTML += "WAKE UP!";
+      
+    
+    }
+    function myStopFunction() {
+      clearInterval(myVar);
+    }
+      </script>
+
+
+</body>
+
+</html>

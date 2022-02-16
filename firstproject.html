@@ -1,0 +1,67 @@
+<hmtl onload="music()">
+    <head>
+        <title> Due list for school</title>
+
+
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+        <script type="text/javascript"></script>
+    </head>
+    <body>
+
+      <div class="navbar"> 
+        
+                <a href="http://127.0.0.1:5500/testjsp.html"><button>ALARM</button></a>
+                
+                <a href=""><button>morning schedule</button></a>
+          
+           </div>
+
+
+         
+        <div align="center">
+        <div><h1>TIMER HERE</h1></div>
+        <h2>DUE LIST FOR SCHOOL</h2>
+        <audio src="https://www.bensound.com/bensound-music/bensound-moose.mp3"></audio>
+       <ul>
+           <input id="text1" placeholder="subject"  <li>     time left   <input id="a" placeholder="time left">   </li>  <input id="text2" placeholder="contact info for teacher"  
+           </li><br>
+           <input id="text3" placeholder="subject"  <li>     time left   <input id="b" placeholder="time left">    </li>  <input id="text4" placeholder="contact info for teacher"  
+           </li><br>
+           <input id="text5" placeholder="subject"  <li>     time left   <input id="c" placeholder="time left">    </li>  <input id="text6" placeholder="contact info for teacher"  
+           </li><br>
+           <input id="text7" placeholder="subject"  <li>     time left   <input id="d" placeholder="time left">    </li>  <input id="text8" placeholder="contact info for teacher"  
+           </li><br>
+           <input id="text9" placeholder="subject"  <li>     time left   <input id="e" placeholder="time left">    </li>  <input id="text10" placeholder="contact info for teacher"  
+           </li><br>
+           </ul>
+       </div>
+       <div class="musicOn">
+        <audio id="audio" style="display:none;" src="Camellia - Light It Up.m4a" controls autoplay loop>
+      </div>
+      <div class="container">
+        <button class="title">background</button>
+      </div>
+
+      <a href="http://127.0.0.1:5500/testjsp.html"><button>ALARM</button></a>
+
+
+       <script>
+        let on_off = document.querySelector('.container .title');
+let audio = document.querySelector('.musicOn audio');
+
+on_off.onclick = function() {
+  audio.paused ? audio.play() : audio.pause();
+}
+       </script>
+    </body>
+   <link href="fp.css" rel="stylesheet"/>
+
+
+   </hmtl>
+
+
+
+

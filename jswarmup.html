@@ -1,0 +1,38 @@
+<html>
+<head><title></title></head>
+<body>
+    <p>
+
+    <button onclick="myFunction()">switch</button><br> boo
+    <p Id="halloween"> 🚪 </p> 
+
+    
+<script>
+
+function myFunction(){
+let A=document.getElementById("halloween").innerHTML;
+document.getElementById("halloween").innerHTML = A.replace("🚪","👻 hahaha")
+}
+//replaces the door with the ghost and says hahaha
+
+
+</script>
+
+
+
+<div id="hideaway" style="display:none;">🎃</div>
+<a href="javascript:;"
+onClick="document.getElementById('hideaway').style.display='block';">?</a>
+
+<div id="boo" style="display:none;">🎃</div><br>
+<a href="javascript:;"
+
+
+onClick="document.getElementById('boo').style.display='block';">...</a><br>
+<a href="javascript:;" onClick="document.getElementById('boo').style.display='none';">🎃</a><br>
+<input type="button" value="ahhh" onClick="document.getElementById('boo').style.display='block';"><br>
+<a href="javascript:;" onClick="document.getElementById('boo').innerHTML='🧟‍♀️';">brainz</a>
+
+</body>
+
+</html>
